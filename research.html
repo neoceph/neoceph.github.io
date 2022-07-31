@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>Abdullah-Al-Amin | Case Western Reserve University</title>
+<meta name="keywords" content="Finite Element, Computational Mechanics, ANSYS, Micro Particle separation, Abdullah-Al-Amin, CWRU, Case Western Reserve University, University of Akron" />
+<meta name="description" content="The quest for computational mechanics world" />
+<link rel="shortcut icon" href="images/favicon.png" />
+<link href="page.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body>
+
+	<div class="header">
+		<div class="h_left">
+			<h1>
+				Abdullah-Al-Amin
+			</h1>
+			<h3>
+				Ph.D. Candidate
+			</h3>
+			<h2>
+				Case Western Reserve University
+			</h2>
+			
+		</div>
+		<div class="h_right">
+			<div class="quot">
+				<i>"Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do. So throw off the bowlines. Catch the trade winds in your sails. Explore. Dream. Discover" – Mark Twain.</i>
+			</div>
+		</div>
+	</div>			
+
+	
+	<div class="description">
+		<ul class="links">
+
+				<li>
+					<a href="education.html">Education</a>
+				</li>
+				<li id="current">
+					<a href="research.html">Research</a>
+					<ul id="submenu">
+						<li><a href="research.html#multiscale_magnet_design">MRI Magnet Design</a></li>
+						<li><a href="research.html#particle_separation">Particle Separation</a></li>
+						<li><a href="research.html#microgripper">Microgripper</a></li>
+						<li><a href="research.html#robotics">Robotics</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="publication.html">Publications</a>
+				</li>
+				<li>
+					<a href="resume.html">Resume</a>
+				</li>
+				<li>
+					<a href="awards.html">Awards</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+				<li>
+					<a href="class.html">Courses</a>
+				</li>
+				<li>
+					<a href="index.html">About</a>
+				</li>
+		</ul>			
+		<div class="center_content">
+			<div class="texts">
+				<h2>
+					<a name="multiscale_magnet_design">Multiscale Multiphysics Magnet Design</a>
+				</h2>
+				<div class="figure">
+					<img src="images/MRI_Strain.png" alt="MRI multiscale strain" width="100%"/>
+					<div class="fid">
+						MRI bundle strains: FEA simulation.
+					</div>
+				</div>
+				<p class="intro">
+					An MRI coil is made up of superconducting composite wire. Modeling of the entire system from wire building block is troublesome and computationally intensive. It is necessary to numerically homogenize the material properties of coil bundles by modeling the wire at the wire length scale. Once the wire properties are estimated, modeling the manufacturing process of MRI coil from winding through cooling down to cryogenic temperature to the electromagnetic excitation is a multiphysics modeling. A composite material is constructed of materials of different properties. The composite fiber and matrix properties may vary down to the nano-scale now a days. Usually, the constituent fiber and matrix material properties are well known. From the nano or micro scale, the material properties can then be approximated by established numerical techniques, such as Finite Element Analysis (FEA) or Molecular dynamics (if the variations are in molecular level). From that length scale, it is then relatively easy to estimate characteristics at macro-scale.
+				</p>
+				<p>
+				An MRI system operates at a temperature less than the critical temperature of the superconductor. Before the operation, the coils need to be wounded and cooled to the cryo temperature. After that, the magnet is excited; a state when the system is superconducting very large amount of current ~106 Am-2. In a nutshell, the manufacturing and operation of an MRI system undergoes the following steps 
+				
+				<li>Winding of superconducting wire around a mandrel. </li>
+				<li>Thermal cool-down to cryogenic temperature. </li>
+				<li>Electromagnetic excitation to the desired magnetic field.</li>
+				<br>
+				<div class="fig_mid">
+					<img src="images/composite_model.jpg" alt="Co-planner Electrode" width="50%"/>
+					<div style="margin-left: 15%; margin-right: 13%;">
+						<b><i>Figure</i></b> <i>Multiscale Modeling from microscopic image-CAD-FEA-macroscale characterization (clockwise from top left)</i>
+					</div>
+				</div>
+				<br>
+				The approximation of wire material properties provide advantage to model the winding, cooling and electromagnetic excitation process. Thermal cool-down and electromagnetic charging requires solving of equations in two different physics field. For example, the strain development due to electromagnetic excitation requires solving Maxwell equation and Elasticity equation simultaneously. These type of modeling is called multiphysics modeling.				
+				</p>
+				<div class="figure">
+					<img src="images/Dean.jpg" alt="picture of dean vortex" width="100%"/>
+					<div class="fid">
+						Dean Vorteces.
+					</div>
+				</div>
+							
+				<h2>
+					<a name="particle_separation">Micro Particle Separation</a>
+				</h2>
+				
+				<p class="intro">
+				
+					Continuous separation of microparticle has an enormous latent potential for biochemical[1,2] and clinical analysis. Currently there are several methods to separate micro-particles such as acoustic tweezers[3,4] dielectrophoresis[5], magnetic forces[6] and microfluidic inertia.[7,8] Among them, inertial microfluidics has the advantage of eliminating other external excitation forces and hence reduces complex design and device setup resulting in simplified fabrication. In inertial microfluidics; particles are usually separated based inertial migration and/or secondary flow. If a channel has curvature, secondary flows like Dean vortices[9,10] occur in the flow regime. This secondary flow is proportional to the particle dimension and flow velocity. As the fluids and particles are moving along a curved path the centrifugal forces should also be taken into account. This centrifugal force is proportional to the cubic of the particle dimension and square of the flow velocity. So keeping the flow velocity constant, if the particle dimensions go on increasing, the centrifugal force increases more rapidly compared to the dean forces. For smaller particles, Dean Force being comparable with the centrifugal force will tend to push them closer to the inner wall of the curvature. On the other hand, for the larger particle, centrifugal force is dominant and will thus push them closer to the outer wall. Based on the microchannel dimensions, aspect ratio, radius of curvature and channel geometry it is possible to control the separation of particles based on their sizes. Several groups has investigated the particle separation using secondary forces[11], demonstrated separation of multiple particle from mixtures[7,12–14] and separation using differential inertial focusing[15]. My Current research focuses on the potential of inertial microfluidics, mainly secondary flow such as Dean flow based on channel geometry to improve the separation efficiency at higher flow rate so that the separation time can be reduced.
+				</p>
+				
+				
+					<b>References</b>
+					<ol>
+						<li>
+							Blankenstein G, Darling Larsen U. <i><b>"Modular concept of a laboratory on a chip for chemical and biochemical analysis."</b></i> Biosensors and Bioelectronics 1998;13(3–4):427–438.
+						</li>
+						<li>
+							Odegaard H. <i><b>"Advanced compact wastewater treatment based on coagulation and moving bed biofilm processes."</b></i> Water Science &amp; Technology 2000;42(12):33–48.
+						</li>
+						<li>
+							Nilsson A, Petersson F, Jönsson H, Laurell T. "<i><b>Acoustic control of suspended particles in micro fluidic chips."</b></i> Lab Chip 2004;4(2):131–135.
+						</li>
+						<li>
+							Neild A, Oberti S, Beyeler F, Dual J, Nelson BJ. <i><b>"A micro-particle positioning technique combining an ultrasonic manipulator and a microgripper."</b></i> Journal of Micromechanics and Microengineering 2006;16:1562.
+						</li>
+						<li>
+							Gascoyne PRC, Vykoukal J. <i><b>"Particle separation by dielectrophoresis."</b></i> Electrophoresis 2002;23(13):1973–1983.
+						</li>
+						<li>
+							Haik Y, Pai V, Chen C-J. <i><b>"Development of magnetic device for cell separation."</b></i> Journal of Magnetism and Magnetic Materials 1999;194(1–3):254–261.
+						</li>
+						<li>
+							Bhagat AAS, Kuntaegowdanahalli SS, Papautsky I. <i><b>"Continuous particle separation in spiral microchannels using dean flows and differential migration."</b></i> Lab on a Chip 2008;8:1906.
+						</li>
+						<li>
+							Di Carlo D. <i><b>"Inertial microfluidics."</b></i> Lab on a Chip 2009;9(21):3038.
+						</li>
+						<li>
+							Dean WR. <i><b>"Fluid motion in a curved channel."</b></i> Proceedings of the Royal Society of London. Series A, Containing Papers of a Mathematical and Physical Character 1928;121(787):402–420.
+						</li>
+						<li>
+							Berger SA, Talbot L, Yao LS. <i><b>"Flow in curved pipes."</b></i> Annual Review of Fluid Mechanics 1983;15(1):461–512.
+						</li>
+						<li>
+							Sollier E, Rostaing H, Pouteau P, Fouillet Y, Achard J-L. <i><b>"Passive microfluidic devices for plasma extraction from whole human blood."</b></i> Sensors and Actuators B: Chemical 2009;141(2):617–624.
+						</li>
+						<li>
+							Bhagat AAS, Kuntaegowdanahalli SS, Dionysiou DD, Papautsky I. <i><b>"Spiral microfluidic nanoparticle separators."</b></i> In: Proceedings of spie. San Jose, CA, USA: 2008. p. 68860M–68860M–11.
+						</li>
+						<li>
+							Hasni AE, Göbbels K, Thiebes AL, Bräunig P, Mokwa W, Schnakenberg U. <i><b>"Focusing and sorting of particles in spiral microfluidic channels."</b></i> Procedia Engineering 2011;25:1197–1200.
+						</li>
+						<li>
+							Nam J, Lim H, Kim D, Jung HW, Shin S. <i><b>"Continuous separation of microparticles in a microfluidic channel via the elasto-inertial effect of non-newtonian fluid."</b></i> Lab on a Chip 2012.
+						</li>
+						<li>
+							Russom A, Gupta AK, Nagrath S, Carlo DD, Edd JF, Toner M. <i><b>"Differential inertial focusing of particles in curved low-aspect-ratio microchannels."</b></i> New Journal of Physics 2009;11:075025.
+						</li>
+					</ol>
+				
+				<h2>
+					<a name="microgripper">Droplet Microgripper</a>
+				</h2>
+				
+				<p class="intro">
+				
+					In the microworld everything is tiny and small. To move, organize and position these tiny small things requires tiny forces ranging from pN (pico-newton) to mN (mili-newton).  Their displacements are also small and usually in the range from nanometer to millimeter. A human hand or real size tweezers are not suitable to move, assemble and manipulate in the micro or nanoworld. To do the job for us we can design and build micro-grippers. But most of the micro-objects contains delicate feature and they requires special care and extra precautions while gripping them. The microgrippers are hence designed with intense care to avoid damage, destruction and deformation of the objects. Almost all of the conventional micro-grippers and their actuation techniques rely on solid and hard gripping surface. So a slightest variation in the gripping force can therefore cause the micro-object to be damaged. To overcome this problem utilization of the electrowetting phenomena can provide a way out of this.  Microgrippers based on electrowetting principle uses a liquid bridge to grip micro-objects. So the possibility of indenting or scratching and thus damaging the micro-objects are completely eliminated.
+				</p>
+				
+				<p>
+					The basic principle of droplet based microgripper is the electrowetting. This phenomenon is a reconstruction of the interesting phenomena “Electrocapillarity.” Electrocapillarity in simple words can be described as the rise of a liquid in a capillary tube while an electric field is applied. It appears that the surface tension of the liquid has increased under the application of electric field. This interesting incident was first observed and published by an ingenious Frenchman Nobel Laureate Gabriel Lippmann at 1875.[1] He didn’t win Nobel for electrocapillarity though. His Nobel Prize winning invention was far more interesting than electrocapillarity; the color photography method. Unfortunately, only the electrocapillarity or electrowetting instead of the color photography method will be discussed here. 
+				</p>
+				<p>
+					Let’s jump into the electrowetting phenomenon from the electrocapillarity. Electrowetting is the change of contact angle of a liquid droplet on a surface under applied electric field. Usually under applied electric potential the contact angle of a liquid droplet decreases. Recent evolution of electrowetting was developed by Berge in early 1990.[2] He demonstrated the favorable wetting of a liquid placed on an insulator when electric field is applied by two electrodes one touching the liquid droplet and the other placed below the insulator surface as shown in the figure 1. 
+				</p>
+				<div class="fig_mid">
+					<img src="images/figure1.jpg" alt="Electrowetting" width="100%"/>
+					<div style="margin-left: 15%; margin-right: 13%;">
+						<b><i>Figure 1:</i></b> <i>Electrowetting Principle</i>
+					</div>
+				</div>
+				<p>
+					The contact angle change of liquid droplet under applied electric field is approximated by following Young-Lippmann’s equation,
+				</p>
+				<div class="fig_mid">
+					<img src="images/eq1.jpg" alt="Young-Lippmann Equation" width="100%"/>
+				</div>
+
+				
+				<p>
+					This equation changed into the following equation if a co-planner electrode is used instead of the conventional electrodes as described by.[3]
+				</p>
+				<div class="fig_mid">
+					<img src="images/eq2.jpg" alt="Young-Lippmann Equation" width="80%"/>
+				</div>
+				<div class="fig_mid">
+					<img src="images/figure2.jpg" alt="Co-planner Electrode" width="50%"/>
+					<div style="margin-left: 15%; margin-right: 13%;">
+						<b><i>Figure 2:</i></b> <i>A co-planner electrode</i>
+					</div>
+				</div>
+				<p>
+				So now we can manipulate the contact angle of the droplet by changing the electrical potential, in other words we can apparently change the surface tension of the droplet. Using this droplet system a soft microgripper is designed. The microgripper looks like figure 3. 
+				</p>
+				<div class="fig_mid">
+					<img src="images/figure3.jpg" alt="microgripper" width="50%"/>
+					<div style="margin-left: 15%; margin-right: 13%;">
+						<b><i>Figure 3:</i></b> <i>Working principle of a droplet microgripper</i>
+					</div>
+				</div>
+				<p>
+				Working principle is explained in details in figure 4. 
+				</p>
+				<div class="fig_mid">
+					<img src="images/figure4.jpg" alt="microgripper working mechanism" width="90%"/>
+					<div style="margin-left: 15%; margin-right: 13%;">
+						<b><i>Figure 4:</i></b> <i>Mechanism of a droplet microgripper</i>
+					</div>
+				</div>
+				<p>
+					Starting from a to b in figure 4, when high voltage is applied on the device the surface tension reduces which is reflected on the decrement in the contact angle. This device is then bringing in contact with the object to pick up and a liquid bridge is formed as shown in (b). Now after completing the manipulation the object the voltage is then reduced until the liquid bridge is broken by the self-weight of the object
+				</p>
+				<p>
+					In real life we might need to grip micro object while the environment is at elevated temperature or at vacuum. To extend the capability of this type of microgripper one possible solution is to use the suitable operating liquid such as ionic liquid.[4] 
+				</p>
+			<b>References</b>
+				<ol>
+					<li>
+						Lippmann G. <i><b>"Relations Entre Les Phénomenes Électriques Et Capillaires."</b></i> Gauthier-Villars, 1875.
+					</li>
+					<li>
+						Berge B. <i><b>"Electrocapillarity and wetting of insulator films by water."</b></i> Comptes Rendus De L Academie Des Sciences Serie II 1993;317:157–163.
+					</li>
+					<li>
+						Yi U-C, Kim C-J. <i><b>"Characterization of electrowetting actuation on addressable single-side coplanar electrodes."</b></i> J. Micromech. Microeng. 2006;16(10):2053–2059.
+					</li>
+					<li>
+						Amin AA, Jagtiani A, Vasudev A, Hu J, Zhe J. <i><b>"Soft microgripping using ionic liquids for high temperature and vacuum applications."</b></i> Journal of Micromechanics and Microengineering 2011;21:125025.
+					</li>
+				</ol>	
+			<h2>
+					<a name="robotics">Robotics</a>
+				</h2>
+				
+				<p class="intro">
+				
+					What does a robot do?  It serves human? Yeah, but while serving human it analyzes the environment around it and take decisions of its own. This eliminates the direct or indirect supervision of human being for a job to be done. The rules of robotics stated by famous writer Issac Asimov can be used to describe the behavior of robotics.
+				</p>
+				
+				<ol class="law">
+					<li>	
+						A robot may not injure a human being or, through inaction, allow a human being to come to harm.
+					</li>
+					<li>
+						A robot must obey the orders given to it by human beings, except where such orders would conflict with the First Law.
+					</li>
+					<li>
+						A robot must protect its own existence as long as such protection does not conflict with the First or Second Laws.
+					</li>
+				</ol>
+
+				
+				<p>
+					With the evolution of Artificial Intelligence (AI) human being is now closer on implementing these robotics rules. The driverless Google car got its license to drive inside the city, Asimo imitating human much more closely, dexterous robotics hands performing delicate tasks which is even difficult for an expert human hand. So we are not far from robotics revolution.
+				</p>
+				<div class="figure">
+					<img src="images/figure5.jpg" alt="A manual Robot" width="100%"/>
+					<div style="margin-left: 15%; margin-right: 13%;">
+						<b><i>Figure 5:</i></b> <i>Silhouette, Manually operated Robot</i>
+					</div>
+				</div>
+				<p>
+					My experience with robotics started at the sophomore college year with a simple obstacle avoidance scout robot. As the journey began I designed and fabricated several robots as part of an international robotics competition. Most of the task assigned to the robots was simple. Follow a desired path while taking feedback from the motor. Thus measure the distance travelled and constantly locating the position in spatial dimension. The speeds at which these robots travel are varied using Pulse width modulation using a PIC 16F452 microcontroller while feedbacks from motors are processed. After reaching to the desired location objects of different shapes are identified and the desired one is picked up. The robots then travel another path in order to deliver the object to the destination. For this purpose we developed SPSR, X-bot, Ilkbot with different gripper and mobility mechanism.  In some situations it might not be possible for a single robot to reach for an object placed at certain height. In that case combination of more than one robot with each other is helpful. We have designed Scoutship and Carrier-Bot for this purpose. Where Scoutship can communicate with Carrier-Bot and combine with each other while reaching for an object place at a height bigger than the height of each of the robots alone. There are some other situations where a robot needs to be controlled by human interactions. We designed and fabricated another robot (Silhouette) operated by a human to perform certain tasks. For all these robots H-bridge circuit was used to control the motor movement. Regenerative braking was applied to stop the motor in shortest possible time. Details of the robots are described below.
+				</p>
+				
+				<p>
+					<b><i>Silhouette:</i></b>This robot has four degree of freedom (DOF): Two for the driving system and another two for the gripper positioning and gripping. Using High torque rated four DC motor all of the motion was provided. A 12 V battery with eight button remote controller was used to control the motion of the robot. <br/><br/> <b><i>Carrier-BOT:</i></b>	Carrier bot has the capability to communicate with Scoutship. It starts moving after it is triggered by Scoutship. It has three DOF: Two for the driving and one for setting the elevation. This robot uses three DC motor to provide necessary actuation and movement. <br/><br/><b><i>Scoutship:</i></b> Scoutship is the simplest of all the robots having only two DOF. It can only move forward and backward and provide gripping action. <br/><br/><b><i>SPSR:</i></b> As like the Silhouette it has DOF and hence four DC motor was used. This robot was designed to grip and pickup cubic shape object and place that in desired location. <br/><br/><b><i>X-bot and Ilk Bot:</i></b> These two robots both have four degrees of freedom similar to SPSR but both of them uses different types of elevation system and gripping system. X-bot uses roller type elevation instead of sliding mechanism through a circular guide ways similar to SPSR and Ilk bot uses polar elevation. Their gripping mechanism is also different. X-bot has mechanical link type gripping mechanism and Ilk bot use a pair of gear to provide motion on gripper jaws.
+				</p>
+				<div class="fig_mid">
+					<img src="images/figure6.jpg" alt="CarrierBot, Scoutship, SPSR" width="80%"/>
+					<div style="margin-left: 15%; margin-right: 13%;">
+						<b><i>Figure 6:</i></b> <i>CarrierBot, Scoutship, SPSR</i>
+					</div>
+				</div>
+				<div class="fig_mid">
+					<img src="images/figure7.jpg" alt="Ilk Bot" width="80%"/>
+					<div style="margin-left: 15%; margin-right: 13%;">
+						<b><i>Figure 7:</i></b> <i>Ilk Bot</i>
+					</div>
+				</div>
+			</div>	
+			
+			<div class="footer">
+				<div class='left'>
+					<span> Last Update: April 18, 2017
+					</span>
+				</div>
+				<div class="right">
+					<a href="mailto: nirjhor18@yahoo.com">Report error</a>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+
+	</div>
+
+	
+</body>
+</html>
