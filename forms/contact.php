@@ -6,7 +6,7 @@
   * For more info and help: https://bootstrapmade.com/php-email-form/
   */
 
-  // Replace contact@example.com with your real receiving email address
+  // Replace contact@example.com with your real receiving email address. Changed to personal gmail.
   $receiving_email_address = 'nirjhor18@gmail.com';
 
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
